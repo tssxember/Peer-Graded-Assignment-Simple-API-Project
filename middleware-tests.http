@@ -1,0 +1,46 @@
+### Test API Endpoints with Middleware
+
+### 1. Test without Authorization header (should return 401)
+GET https://localhost:7001/users
+
+### 2. Test with valid Authorization header
+GET https://localhost:7001/users
+Authorization: Bearer valid-token-123
+
+### 3. Test POST with valid token
+POST https://localhost:7001/users
+Authorization: Bearer valid-token-123
+Content-Type: application/json
+
+{
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "age": 28
+}
+
+### 4. Test error handling middleware (triggers exception)
+GET https://localhost:7001/test/error
+Authorization: Bearer valid-token-123
+
+### 5. Test with invalid token
+GET https://localhost:7001/users
+Authorization: Invalid-token
+
+### 6. Test GET specific user with valid token
+GET https://localhost:7001/users/1
+Authorization: Bearer valid-token-123
+
+### 7. Test PUT with valid token
+PUT https://localhost:7001/users/1
+Authorization: Bearer valid-token-123
+Content-Type: application/json
+
+{
+    "name": "John Updated",
+    "email": "john.updated@example.com",
+    "age": 31
+}
+
+### 8. Test DELETE with valid token
+DELETE https://localhost:7001/users/2
+Authorization: Bearer valid-token-123
