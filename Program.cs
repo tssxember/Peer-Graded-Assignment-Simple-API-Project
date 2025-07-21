@@ -236,9 +236,10 @@ public class AuthenticationMiddleware
 
     public async Task InvokeAsync(HttpContext context)
     {
-        // Skip authentication for OpenAPI and Swagger endpoints in development
+        // Skip authentication for OpenAPI, Swagger endpoints, and root path (Swagger UI) in development
         if (context.Request.Path.StartsWithSegments("/openapi") ||
-            context.Request.Path.StartsWithSegments("/swagger"))
+            context.Request.Path.StartsWithSegments("/swagger") ||
+            context.Request.Path == "/")
         {
             await _next(context);
             return;

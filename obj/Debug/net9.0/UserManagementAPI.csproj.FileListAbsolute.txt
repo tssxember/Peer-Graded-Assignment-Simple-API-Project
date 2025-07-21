@@ -33,3 +33,4 @@ C:\Users\tssxe\OneDrive\University\Courera\Microsoft\Section 5\UserManagementAPI
 C:\Users\tssxe\OneDrive\University\Courera\Microsoft\Section 5\UserManagementAPI\UserManagementAPI\obj\Debug\net9.0\UserManagementAPI.pdb
 C:\Users\tssxe\OneDrive\University\Courera\Microsoft\Section 5\UserManagementAPI\UserManagementAPI\obj\Debug\net9.0\UserManagementAPI.genruntimeconfig.cache
 C:\Users\tssxe\OneDrive\University\Courera\Microsoft\Section 5\UserManagementAPI\UserManagementAPI\obj\Debug\net9.0\ref\UserManagementAPI.dll
+C:\Users\tssxe\OneDrive\University\Courera\Microsoft\Section 5\UserManagementAPI\UserManagementAPI\obj\Debug\net9.0\UserManagementAPI.sourcelink.json
